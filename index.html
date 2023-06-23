@@ -19,9 +19,6 @@
     p {
       font-size: 16px;
     }
-    a {
-      color: cyan;
-      }
 
     .loader {
       border: 8px solid #f3f3f3;
@@ -38,10 +35,34 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 480px) {
+      body {
+        padding-top: 50px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+      a{
+        color: cyan;
+      }
+
+      .loader {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+      }
+    }
   </style>
   <script>
     setTimeout(function() {
-      window.location.href = 'https://godlykmathews.github.io';
+      window.location.href = 'https://new-website.com';
     }, 3000); // Redirect after 3 seconds (3000 milliseconds)
   </script>
 </head>
@@ -49,6 +70,6 @@
   <h1>Checking Your Connection...</h1>
   <div class="loader"></div>
   <p>Please wait while we verify your connection.</p>
-  <p>If you are not redirected within a few seconds, <a href="https://godlykmathews.github.io">click here</a>.</p>
+  <p>If you are not redirected within a few seconds, <a href="https://new-website.com">click here</a>.</p>
 </body>
 </html>
